@@ -38,8 +38,8 @@ public class LightBoard
     /* to be implemented in part (b) */
       int numOn = 0;
     for (int i = 0; i<lights.length;i++){
-      if (lights[row][col]){
-        numOn ++;
+      if (lights[i][col]){
+        numOn++;
       }
     }
 
