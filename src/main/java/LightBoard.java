@@ -46,7 +46,7 @@ public class LightBoard
     if (lights[row][col]&& numOn%2 ==0){
 
       return false;}
-    else if(lights[row][col]&& numOn%3 ==0){
+     if(lights[row][col]&& numOn%3 ==0){
       return true;
   }else
   return lights[row][col];
