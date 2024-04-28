@@ -14,15 +14,15 @@ public class LightBoard
     /* to be implemented in part (a) */
     Rows = numRows;
     Cols = numCols;
-    random = Math.random()*101;
+    random = (int)(Math.random()*101);
          for (int r = 0;r<Rows;r++){
            for(int c=0;c<Cols;c++){
         if(random > 60 ){
         lights[r][c] = false;
-        random = Math.random()*101;
+        random = (int)(Math.random()*101);
         }else {
-          light[r][c] = true;
-          random = Math.random()*101;
+          lights[r][c] = true;
+          random = (int)(Math.random()*101);
         }
 }
 }
