@@ -36,16 +36,26 @@ public class LightBoard
   public boolean evaluateLight(int row, int col)
   {
     /* to be implemented in part (b) */
-      if(lights[row][col] == true){
-return true;
-      }else 
-        return false;
+      int numOn = 0;
+    for (int i = 0; i<lights.length;i++){
+      if (lights[row][col]){
+        numOn ++;
+      }
+    }
 
+    if (lights[row][col]&& numOn%2 ==0){
+
+      return false;}
+    else if(lights[row][col]&& numOn%3 ==0){
+      return true;
+  }else
+  return lights[row][col];
   }
   public boolean[][] getLights()
   {
     return lights;
   }
+  
   //used for testing
   public String toString()
   {
