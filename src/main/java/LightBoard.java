@@ -15,6 +15,7 @@ public class LightBoard
     Rows = numRows;
     Cols = numCols;
     random = (int)(Math.random()*101);
+    lights = new boolean [numRows][numCols];
          for (int r = 0;r<Rows;r++){
            for(int c=0;c<Cols;c++){
         if(random > 60 ){
