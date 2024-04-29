@@ -1,7 +1,7 @@
 public class LightBoard
 {
   /** The lights on the board, where true represents on and false represents off.
-   */private [][] lights;
+   */private boolean [][] lights;
   /** Constructs a LightBoard object having numRows rows and numCols columns.
    * Precondition: numRows > 0, numCols > 0
    * Postcondition: each light has a 40% probability of being set to on.
