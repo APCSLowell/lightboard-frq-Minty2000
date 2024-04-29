@@ -2,9 +2,6 @@ public class LightBoard
 {
   /** The lights on the board, where true represents on and false represents off.
    */
-  private boolean[][] lights;
-  private int Rows, Cols;
-  private int random;
   /** Constructs a LightBoard object having numRows rows and numCols columns.
    * Precondition: numRows > 0, numCols > 0
    * Postcondition: each light has a 40% probability of being set to on.
@@ -12,9 +9,7 @@ public class LightBoard
   public LightBoard(int numRows, int numCols)
   {
     /* to be implemented in part (a) */
-    Rows = numRows;
-    Cols = numCols;
-    random = (int)(Math.random()*101);
+    double random = (int)(Math.random()*101);
     lights = new boolean [numRows][numCols];
          for (int r = 0;r<Rows;r++){
            for(int c=0;c<Cols;c++){
