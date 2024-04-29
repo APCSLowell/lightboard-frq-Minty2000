@@ -18,15 +18,13 @@ public class LightBoard
     lights = new boolean [numRows][numCols];
          for (int r = 0;r<Rows;r++){
            for(int c=0;c<Cols;c++){
-        if(random > 60 ){
-        lights[r][c] = false;
-        random = (int)(Math.random()*101);
-        }else {
+        if(random < 40 ){
           lights[r][c] = true;
           random = (int)(Math.random()*101);
-        }
+      
 }
 }
+  }
   }
 
   /** Evaluates a light in row index row and column index col and returns a status
